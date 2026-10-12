@@ -122,38 +122,6 @@ The SQL script prepares four views for reporting:
 - `vw_repayment_performance`
 - `vw_monthly_loan_performance`
 
-**Dashboard screenshots:** Add screenshots of the four pages here after uploading them to an `images/` folder. This README does not assume any specific numerical results without verified dashboard outputs.
-
-## Repository Contents
-
-Suggested structure when the corresponding files are available:
-
-```text
-credit-risk-analytics/
-├── README.md
-├── sql/
-│   └── credit_risk_analysis.sql
-├── powerbi/
-│   └── credit_risk_dashboard.pbix
-└── images/
-    ├── loan_portfolio_overview.png
-    ├── credit_risk_analysis.png
-    ├── repayment_performance.png
-    └── customer_demographics.png
-```
-
-The filenames above are **suggested names**, not a claim that these files are already in the repository.
-
-## How to Run the SQL
-
-1. Use **MySQL 8.0 or later** in MySQL Workbench or a compatible client.
-2. Run the database and staging-table creation statements.
-3. Import appropriately authorized data into the five `stg_*` tables.
-4. Execute the cleaning and transformation sections to create `dim_*` and `fact_*` tables.
-5. Run exploratory and credit-risk queries, followed by the functions, procedures, and reporting views.
-6. Connect Power BI to the reporting views to build or refresh the dashboards.
-
-**Before publishing:** Remove or anonymize personal, confidential, or proprietary data. The uploaded SQL defines fields such as names, dates of birth, and financial information; do not upload real customer records without explicit authorization.
 
 ## Skills Demonstrated
 
