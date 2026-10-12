@@ -123,6 +123,60 @@ The SQL script prepares four views for reporting:
 - `vw_monthly_loan_performance`
 
 
+> **View the dashboard:** Open the Power BI `.pbix` file in this repository using Power BI Desktop. GitHub does not preview interactive `.pbix` reports in the browser.
+
+## Dashboard Pages
+
+### 1. Loan Portfolio Overview
+
+Provides a summary of lending activity, including disbursement trends, loan purposes, application channels, and geographic distribution.
+
+| KPI | Dashboard value |
+|---|---:|
+| Total loan disbursement | ₱1.06 billion |
+| Total loans | 17K |
+| Total borrowers | 11K |
+| Average loan amount | ₱64.13K |
+| Loan approval rate | 76.70% |
+
+### 2. Credit Risk Analysis
+
+Examines credit score distributions, borrower risk categories, delinquency buckets, and loan-purpose risk patterns.
+
+| KPI | Dashboard value |
+|---|---:|
+| Average credit score | 669.40 |
+| Loan delinquency rate | 62.97% |
+| Reported NPL rate | 62.97% |
+
+The Fair credit-risk category is the largest borrower group in the displayed chart. The reported NPL and delinquency rates are identical in the dashboard; their definitions should be checked in DAX before treating them as distinct measures.
+
+### 3. Repayment Performance
+
+Tracks scheduled versus collected payments, repayment status, on-time payments, and unpaid installments across borrower segments.
+
+| KPI | Dashboard value |
+|---|---:|
+| Total scheduled repayments | ₱1.02 billion |
+| Total collected repayments | ₱983.35 million |
+| Repayment collection ratio | 96.08% |
+| On-time repayment rate | 47.68% |
+
+The collection ratio measures the amount collected relative to scheduled repayments; it is different from the percentage of payments made on time.
+
+### 4. Customer Demographics
+
+Profiles customers by province, gender, employment status, and age group, including income comparisons across age groups.
+
+| KPI | Dashboard value |
+|---|---:|
+| Total customers | 20K |
+| Average customer age | 45.63 years |
+| Average monthly income | ₱46.38K |
+
+The displayed gender distribution is approximately balanced, while employed customers form the largest employment group.
+
+
 ## Skills Demonstrated
 
 `SQL` · `MySQL` · `Data Cleaning` · `Exploratory Data Analysis` · `Credit Risk Analytics` · `CTEs` · `Window Functions` · `SQL Views` · `Stored Procedures` · `Power BI` · `DAX` · `Dashboard Development`
